@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dashboard de Finanças</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Dashboard de Finanças</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Relatórios</a></li>
+          <li><a href="#">Configurações</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="overview">
+        <h2>Visão Geral</h2>
+        <div class="card">
+          <h3>Receitas</h3>
+          <p>R$10.000,00</p>
+        </div>
+        <div class="card">
+          <h3>Despesas</h3>
+          <p>R$5.000,00</p>
+        </div>
+        <div class="card">
+          <h3>Lucro</h3>
+          <p>R$5.000,00</p>
+        </div>
+      </section>
+      <section class="charts">
+        <h2>Gráficos</h2>
+        <div class="chart-container">
+          <canvas id="myChart"></canvas>
+        </div>
+      </section>
+      <section class="transactions">
+        <h2>Transações Recentes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Data</th>
+              <th>Descrição</th>
+              <th>Tipo</th>
+              <th>Valor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>01/01/2023</td>
+              <td>Salário</td>
+              <td>Receita</td>
+              <td>R$5.000,00</td>
+            </tr>
+            <tr>
+              <td>02/01/2023</td>
+              <td>Aluguel</td>
+              <td>Despesa</td>
+              <td>R$1.000,00</td>
+            </tr>
+            <tr>
+              <td>03/01/2023</td>
+              <td>Internet</td>
+              <td>Despesa</td>
+              <td>R$200,00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p>Dashboard de Finanças &copy; 2023</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
